@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Results</title>
+    <style>
+      body{
+        background-color: aliceblue;
+        display: grid;
+        place-items: center;
+      }
+      .container{
+        background: #000;
+        color: azure;
+        border: #000 1px solid;
+        padding: 50px;
+        text-align: center;
+font-size: larger;
+      }
+      button{
+        text-align: center;
+        background-color: brown;
+        padding: 10px 40px;
+        color: aliceblue;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Quiz Results</h1>
+        <div id="results"></div>
+        <button onclick="restartQuiz()">Restart Quiz</button>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const userData = JSON.parse(localStorage.getItem('userData'));
+            const resultsDiv = document.getElementById('results');
+            
+            if (userData) {
+                resultsDiv.innerHTML = `
+                    <p>Name: ${userData.name}</p>
+                    <p>Email: ${userData.email}</p>
+                    <p>Rollno: ${userData.rollno}</p>
+                    <p>Password: ${userData.password}</p>
+                    <p>Batch: ${userData.batch}</p>
+                    <p>Score: ${userData.score}</p>
+                `;
+            }
+        });
+
+        function restartQuiz() {
+            localStorage.removeItem('userData');
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+ body{
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+  overflow-x: hidden;
+  background-color:rgba(0, 0, 0, 0.844);
+}
+nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  background-color: rgba(106, 103, 103, 0.881);
+  padding: 10px;
+  font-size: larger;
+  font-weight: bold;
+  
+}
+ul{
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  margin-inline: 50px;
+  flex-wrap: wrap;
+}
+li{
+  list-style: none;
+}
+
+.wraper{
+  
+  color: white;
+  height:100%;
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+ justify-content: space-around;
+  padding-bottom: 40px;
+  flex-wrap: wrap;
+}
+p{
+  font-size: larger;
+font-family: Georgia, 'Times New Roman', Times, serif;
+width: 500px;
+line-height: 2;
+}
+
+form{
+  background-color: aliceblue;
+  display: grid;
+  place-items:center;
+ color: black;
+  width: 300px;
+  
+  border: 1px solid rgb(193, 237, 237);
+  border-radius: 3px;
+  font-size: larger;
+}
+form input{
+  height: 30px;
+  width: 200px;
+} 
+button{
+  height: 50px;
+  width: 150px;
+  background-color:rgba(137, 16, 16, 0.864);
+  padding: 5px;
+  align-items: center;
+  font-size: larger;
+  color: aliceblue;
+  border-radius: 5px ;
+  border: 1px;
+}
+.home{
+  border-bottom: 3px solid springgreen;
+}
+li:hover{
+  border-bottom: 3px solid springgreen;
+}
+.a-butt{
+  color: white;
+  text-decoration: none;
+  
+}
+
+h2{
+  border: 2px solid grey;
+  padding: 20px;
+  align-items: center;
+  
+}
+#cont{
+  display: grid;
+  justify-content: center;
+ background-color:rgba(0, 0, 0, 0.785);
+ color: aliceblue;
+padding: 20px;
+}
+.fa-regular, .fa-brands ,.fa-sharp,.fa-brands{
+  font-size: 3rem;
+}
+a,i{
+color: aliceblue;
+padding: 10px;
+}
+
+#gitLin{
+  color:aliceblue;
+  font-weight: bold;
+}
+@media screen and (max-width:500px) {
+  nav{
+    width: 100%;
+    background-color: rgba(169, 169, 169, 0.881);
+    padding-left: 100px;
+    position: relative;
+    
+  }
+  #cont{
+    padding: 50px;
+    width: 100%;
+  }
+  p{
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 400px;
+  }
+  form{
+    padding: 100px;
+  }
+  h1{
+    position: absolute;
+    left: 0;
+    top: 0;
+  
+   
+  }
+} 
+
+
+
+
+
+
+
+
+
+
